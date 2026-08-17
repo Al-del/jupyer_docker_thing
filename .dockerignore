@@ -1,0 +1,12 @@
+**/node_modules
+**/.yarn/cache
+**/.yarn/install-state.gz
+**/lib
+**/temp
+**/ui-tests
+**/tsconfig.tsbuildinfo
+**/.idea
+**/.ipynb_checkpoints
+**/.git
+**/__pycache__
+**/*.pyc

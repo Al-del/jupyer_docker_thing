@@ -1,0 +1,15 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.5.2
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: ''
+author_name: andrei0016
+has_ai_rules: false
+has_binder: false
+has_settings: false
+kind: frontend-and-server
+labextension_name: jupyterlab-file-utils
+project_short_description: A JupyterLab extension for file utilities.
+python_name: jupyterlab_file_utils
+repository: https://github.com/andrei0016/jupyterlab-file-utils
+test: true
+

@@ -1,0 +1,101 @@
+/*
+    See the JupyterLab Developer Guide for useful CSS Patterns:
+
+    https://jupyterlab.readthedocs.io/en/stable/developer/css.html
+*/
+
+.jp-MetricsBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 12px;
+  height: 100%;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.jp-MetricsBtn:hover {
+  background: var(--jp-layout-color2);
+}
+
+.jp-MetricsBtn-loading {
+  font-size: var(--jp-ui-font-size0);
+  color: var(--jp-ui-font-color2);
+}
+
+.jp-MetricsBtn-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.jp-MetricsBtn-label {
+  font-size: var(--jp-ui-font-size0);
+  font-weight: 600;
+  color: var(--jp-ui-font-color1);
+}
+
+.jp-MetricsBtn-bar-wrap {
+  display: inline-block;
+  width: 48px;
+  height: 6px;
+  background: var(--jp-layout-color3);
+  border-radius: 3px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.jp-MetricsBtn-bar {
+  display: block;
+  height: 100%;
+  background: var(--jp-brand-color1);
+  border-radius: 3px;
+  transition: width 0.4s ease;
+  min-width: 2px;
+}
+
+.jp-MetricsBtn-val {
+  font-size: var(--jp-ui-font-size0);
+  color: var(--jp-ui-font-color2);
+}
+
+.jp-UsageMetrics {
+  padding: 24px;
+  overflow-y: auto;
+  background: var(--jp-layout-color0);
+}
+
+.jp-UsageMetrics-container {
+  max-width: 720px;
+}
+
+.jp-UsageMetrics-title {
+  font-size: var(--jp-ui-font-size2);
+  font-weight: 600;
+  margin: 0 0 20px;
+  color: var(--jp-ui-font-color0);
+}
+
+.jp-UsageMetrics-section {
+  margin-bottom: 32px;
+}
+
+.jp-UsageMetrics-section h3 {
+  font-size: var(--jp-ui-font-size1);
+  font-weight: 600;
+  margin: 0 0 12px;
+  padding-bottom: 6px;
+  color: var(--jp-ui-font-color1);
+  border-bottom: 1px solid var(--jp-border-color1);
+}
+
+.jp-UsageMetrics-chart-wrap {
+  position: relative;
+  height: 200px;
+}
+
+.jp-UsageMetrics-note {
+  margin: 6px 0 0;
+  font-size: var(--jp-ui-font-size0);
+  color: var(--jp-ui-font-color2);
+}

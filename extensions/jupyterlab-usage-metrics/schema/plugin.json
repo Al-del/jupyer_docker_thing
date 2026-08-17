@@ -1,0 +1,8 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "jupyterlab-usage-metrics",
+  "description": "jupyterlab-usage-metrics settings.",
+  "type": "object",
+  "properties": {},
+  "additionalProperties": false
+}

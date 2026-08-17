@@ -1,0 +1,37 @@
+# Core AI/ML
+# torch/torchvision/torchmetrics/pytorch-lightning are installed separately in the Dockerfile
+catboost
+fasttext
+gensim
+lightgbm
+nltk
+scikit-learn
+spacy
+transformers
+xgboost
+
+# Data handling
+numpy
+pandas
+scipy
+
+# Vision
+opencv-python-headless
+Pillow
+scikit-image
+
+# Visualization
+autoviz
+matplotlib
+plotly
+seaborn
+
+# Utilities
+datasets
+evaluate
+joblib
+tensorboard
+tqdm
+
+# Audio
+librosa
