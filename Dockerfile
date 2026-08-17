@@ -37,10 +37,13 @@ USER root
 RUN conda install -y -c conda-forge "nodejs>=20.19,<21" npm \ 
 	&& node --version
 	&& npm --version
-USER ${NB_UID}
+
 RUN pip install --no-cache-dir \
         /opt/extensions/jupyterlab-file-utils \
         /opt/extensions/jupyterlab-usage-metrics \
     && jupyter labextension list \
     && jupyter server extension list \
     && fix-permissions "${CONDA_DIR}" "${HOME}"
+USER ${NB_UID}
+
+WORKDIR "${HOME}"
