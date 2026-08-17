@@ -30,8 +30,14 @@ USER ${NB_UID}
 RUN pip install --no-cache-dir "setuptools<81"
 
 RUN pip install --no-cache-dir -r /tmp/requirements.txt
-RUN conda install -y -c conda-forge nodejs npm \ 
-&& conda clean --all -f -y
+
+USER root 
+
+
+RUN conda install -y -c conda-forge "nodejs>=20.19,<21" npm \ 
+	&& node --version
+	&& npm --version
+USER ${NB_UID}
 RUN pip install --no-cache-dir \
         /opt/extensions/jupyterlab-file-utils \
         /opt/extensions/jupyterlab-usage-metrics \
